@@ -49,7 +49,12 @@ header {
     grid-column: 1 / 4;
     color: #fff;
 }
-  
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column: 1 / 4;
+}
 .main-content {
     background: lightgray;
     grid-column: 1 / 3;
