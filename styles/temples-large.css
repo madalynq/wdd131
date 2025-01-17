@@ -1,0 +1,63 @@
+:root {
+    --Dark-Purple: rgb(23, 17, 35);
+    --Russian-Violet: rgb(55, 34, 72);
+    --Delft-Blue: rgb(65, 71, 112);
+    --Powder-Blue: rgb(160, 185, 207);
+    --Thistle: rgb(226, 207, 234);
+}
+
+/* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.  
+
+In most WDD courses there is a requirement to use a separate file. This part would go into a separate CSS file. 
+*/
+@media only screen and (min-width: 40em) {
+	.navigation {
+		display: flex;
+        align-items: center;
+		justify-content: space-between;
+        /* margin: 0 rem;
+        padding: 0; */
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+    
+	}
+	.navigation a {
+		text-align: center;
+        color: #fff;
+	}
+	#menu {
+		display: none;
+	}
+
+    nav ul {
+		justify-content: flex-end;
+		flex-direction: row;
+	}
+	nav a {
+		flex: 1 1 100%;
+	}
+
+    header {
+        display: flex;
+    }
+
+    h1 {
+        margin: 10px;
+        font-size: 42px;
+    }
+
+    nav {
+        flex: 1;
+        display: flex;
+    }
+    
+    main {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+
+    h2 {
+        grid-column: span 3;
+    }
+}
