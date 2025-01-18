@@ -12,12 +12,14 @@
     --Thistle: rgb(226, 207, 234);
 }
 
+header {
+    background-color: var(--Russian-Violet);
+}
+
 h1 {
     color: #fff;
     font-family: Caveat, 'Arial Narrow', Arial, sans-serif;
-    font-size: 42px;
-	display: block;
-    
+    font-size: 2.87rem;
 }
 
 /* Mobile View ***************/
@@ -39,13 +41,16 @@ h1 {
     color: #fff;
 }
 
+#menu.show::before {
+	content: "X";
+}
+
 nav {
 	background-color: var(--Russian-Violet);
     font-family: Shadows Into Light Two, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .navigation {
 	list-style: none;
-	margin: 0 auto;
 	max-width: 760px;
 }
 
@@ -54,26 +59,22 @@ nav {
 }
 .navigation a {
 	display: block;
-	padding: 0.75rem;
+	padding: 0.75rem 1rem;
 	text-align: center;
 	text-decoration: none;
 	color: #fff;
 	font-weight: 700;
 	transition: 0.5s;
-	font-size: clamp(1rem, 2vmin, 1.5rem);
+	font-size: clamp(1.5rem, 2vmin, 1.5rem);
 }
 
-.navigation a:hover, navigation a:active {
+.navigation a:hover, .navigation a:active {
 	color: var(--Thistle);
 	background-color: black;
 }
 
 .show li {
 	display: block;
-}
-
-#menu.show::before {
-	content: "X";
 }
 
 
