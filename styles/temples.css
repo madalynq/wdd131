@@ -20,13 +20,14 @@ h1 {
     color: #fff;
     font-family: Caveat, 'Arial Narrow', Arial, sans-serif;
     font-size: 2.87rem;
+	padding: 15px;
 }
 
 /* Mobile View ***************/
 #menu {
 	display: block;
 	font-size: 2rem;
-	font-weight:700;
+	font-weight: 700;
 	text-decoration: none;
 	padding: .5rem .75rem;
 	background-color: var(--Dark-Purple);
@@ -51,7 +52,6 @@ nav {
 }
 .navigation {
 	list-style: none;
-	max-width: 760px;
 }
 
 .navigation li {
@@ -77,29 +77,16 @@ nav {
 	display: block;
 }
 
-
-
-main {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 2rem;
-    display: grid;
-    grid-template-columns: 1fr; 
-    grid-gap: 25px;
-    place-items: center;
-	font-family: Shadows Into Light Two, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-}
-
 h2 {
 	font-family: Caveat, 'Arial Narrow', Arial, sans-serif;
 	font-size: 36px;
+	text-align: center;
 }
 
 img {
-    max-width: 300px;
-    height: auto;
-    
+    border-radius: 10px;
+	height: 100%;
+	width: auto;
 }
 
 footer {

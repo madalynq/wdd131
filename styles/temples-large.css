@@ -2,6 +2,11 @@
 
 In most WDD courses there is a requirement to use a separate file. This part would go into a separate CSS file. 
 */
+* {
+	margin: 0;
+	padding: 0;
+}
+
 @media only screen and (min-width: 40em) {    
     header {
         display: flex; 
@@ -41,9 +46,32 @@ In most WDD courses there is a requirement to use a separate file. This part wou
     
     main {
         grid-template-columns: repeat(3, 1fr); 
+        max-width: 1400px;
+        margin: 0 auto;
+        display: grid;
+        gap: 1rem;
+        place-items: center;
+        font-family: Shadows Into Light Two, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 
-    h2 {
+    h2 {        
         grid-column: span 3;
     }
 }
+
+@media only screen and (max-width: 75em) {
+    main {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    h2 {
+        grid-column: span 2;
+    }
+ }
+
+figcaption {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
