@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Hawaii - Madalyn Querubin</title>
+    <meta name="author" content="Madalyn Querubin">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundametals - Madalyn Querubin - Hawaii" >
+    <link href="styles/place.css" rel="stylesheet">
+    <link href="styles/place-large.css" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Luckiest+Guy&family=Protest+Revolution&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Hawaii</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 600px )" srcset="images/hero-small1.webp">
+                <img src="images/hero-large1.webp" alt="Duke Paoa Kahanamoku Statue" width="1200" height="900">
+            </picture>
+            <section class="card1">
+                <h2>Data</h2>
+                <figure>
+                    <img src="images/hawaii-flag.svg" alt="hawaiian flag" width="200">
+                    <figcaption>Hawaiian Flag</figcaption>
+                </figure> 
+                <ul class="data">
+                    <li><label>Area:</label> 16,636.5 km2</li>
+                    <li><label>Population:</label> 1.435 million</li>
+                    <li><label>Capital:</label> Honolulu</li>
+                    <li><label>Languages:</label> English, "Pidgin" </li>
+                    <li><label>Currency:</label> US Dollar</li>
+                    <li><label>Time Zone:</label> Hawaii-Aleutian Standard Time (GMT-10) </li>
+                    <li><label>Calling Code:</label> 808 </li>
+                    <li><label>Internet TLD:</label> .hawaii </li>
+                </ul>
+            </section>
+            <section class="card2">
+                <h2>Weather</h2>
+                <img src="images/weatherIcon.svg" alt="weather icon" width="30" height="30">
+                <ul class="Weather">
+                    <li><label>Temperature:</label> 81 °F </li>
+                    <li><label>Conditions:</label> Partly Cloudly</li>
+                    <li><label>Wind:</label> NE 13mph</li>
+                    <li><label>Wind Chill: </label></li>
+                </ul>
+            </section>
+            <footer>
+                <p>| &copy; <span id="currentyear"></span> | Madalyn Querubin | Idaho, USA</p>
+                <p><span id="lastModified"></span></p>
+            </footer>
+        </div>
+    </main>
+</body>
+</html>

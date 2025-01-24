@@ -1,0 +1,40 @@
+@media only screen and (min-width: 40em) {
+    .hero img {
+        width: 100%;
+        height: auto;
+        position:relative;
+    }
+   
+    .card1 {
+        position: absolute;
+        background-color: bisque;
+        top: 200px;
+        left: 45px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 10px;
+    }
+    
+    figure {
+        max-width: 200px;
+        padding: 5px;
+    }
+
+    .card2 {
+        position: absolute;
+        background-color: bisque;
+        top: 700px;
+        right: 45px;
+    }
+
+    .card2 img {
+        max-width: 30px;
+        float:right;
+    }
+}
+
+@media only screen and (max-width: 75em) {
+    
+}

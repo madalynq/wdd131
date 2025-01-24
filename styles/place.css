@@ -1,0 +1,66 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+    background-color: rgb(43, 43, 122);
+    color: #eee;
+    text-align: center;
+}
+
+h1 {
+    padding: 1rem;
+    font-family: Caveat, 'Arial Narrow', Arial, sans-serif;  
+}
+
+
+section {
+    border: 2px solid black;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    background-color:rgb(226, 55, 55);
+    font-family: Caveat, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+main {
+    padding: 10px;
+    max-width: 100%;
+    justify-content: center;
+}
+
+li {
+    font-family: Shadows Into Light Two, Helvetica, sans-serif;
+}
+
+label {
+    font-weight: bold;
+}
+
+figure {
+    float: right;
+    font-family: Shadows Into Light Two, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: medium;
+}
+
+footer {
+    font-family: Shadows Into Light Two, Helvetica, sans-serif;
+    background: rgb(34, 34, 100);
+    padding: 2rem;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
