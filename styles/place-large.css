@@ -29,12 +29,13 @@
         right: 45px;
     }
 
-    .card2 img {
-        max-width: 30px;
-        float:right;
+    .icon {
+        display: none;
     }
+
+    .card2 h2::after {
+        content: " 😎";
+    }
+
 }
 
-@media only screen and (max-width: 75em) {
-    
-}

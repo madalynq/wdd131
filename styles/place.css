@@ -30,6 +30,7 @@ h2 {
     margin-bottom: 10px;;
 }
 
+
 img {
     max-width: 100%;
     height: auto;
@@ -43,6 +44,7 @@ main {
 
 li {
     font-family: Shadows Into Light Two, Helvetica, sans-serif;
+    text-align: left;
 }
 
 label {
