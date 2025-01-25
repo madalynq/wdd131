@@ -3,8 +3,13 @@
 	padding: 0;
 }
 
+:root {
+    --NavyBlue: rgb(34, 34, 100);
+    --RedRed: rgb(226, 55, 55);
+}
+
 header {
-    background-color: rgb(43, 43, 122);
+    background-color: var(--NavyBlue);
     color: #eee;
     text-align: center;
 }
@@ -25,7 +30,7 @@ section {
 }
 
 h2 {
-    background-color:rgb(226, 55, 55);
+    background-color:var(--RedRed);
     font-family: Caveat, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-bottom: 10px;;
 }
@@ -60,7 +65,7 @@ figure {
 
 footer {
     font-family: Shadows Into Light Two, Helvetica, sans-serif;
-    background: rgb(34, 34, 100);
+    background: var(--NavyBlue);
     padding: 2rem;
     text-align: center;
     color: #fff;
