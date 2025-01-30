@@ -1,0 +1,79 @@
+/* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.  
+
+In most WDD courses there is a requirement to use a separate file. This part would go into a separate CSS file. 
+*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@media only screen and (min-width: 40em) {    
+    header {
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; /* Vertically center items */
+        padding: 15px 20px;
+        background-color: var(--Russian-Violet);
+    }
+    
+    #menu {
+        display: none;
+    }
+
+	.navigation {
+		display: flex;
+        align-items: center;
+        justify-content: flex-end;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		/* flex: 1 1 100%; */
+	}
+
+	.navigation a {
+		text-align: center;
+        color: #fff;
+        font-size: 26px;
+	}
+
+    h1 {
+        font-size: 46px;
+    }
+
+    nav {
+        justify-content: flex-end;
+    }
+    
+    .temple-cards {
+        grid-template-columns: repeat(3, 1fr); 
+        max-width: 1400px;
+        margin: 0 auto;
+        display: grid;
+        gap: 1rem;
+        place-items: center;
+        font-family: Shadows Into Light Two, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    h2 {        
+        grid-column: span 3;
+    }
+
+    
+}
+
+@media only screen and (max-width: 75em) {
+    .temple-cards {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    h2 {
+        grid-column: span 2;
+    }
+ }
+
+/* figcaption {
+    text-align: center;
+    margin-bottom: 1rem;
+} */
+
+
