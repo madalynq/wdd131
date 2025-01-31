@@ -106,6 +106,7 @@ section {
 
 footer {
 	font-family: Shadows Into Light Two, Helvetica, sans-serif;
+    font-display: swap;
     background: var(--Russian-Violet);
     padding: 2rem;
     text-align: center;
