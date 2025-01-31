@@ -51,19 +51,29 @@ In most WDD courses there is a requirement to use a separate file. This part wou
         display: grid;
         gap: 1rem;
         place-items: center;
-        font-family: Shadows Into Light Two, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: Poiret One, Calibri, sans-serif;
+        font-weight: 600;
+    }
+
+    h3 {
+        font-weight: 900;
+        font-size: xx-large;
     }
 
     h2 {        
         grid-column: span 3;
-    }
-
-    
+    }  
 }
 
 @media only screen and (max-width: 75em) {
     .temple-cards {
         grid-template-columns: repeat(2, 1fr); 
+        font-weight: 600;
+    }
+
+    h3 {
+        font-weight: 900;
+        font-size: xx-large;
     }
 
     h2 {

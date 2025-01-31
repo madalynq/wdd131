@@ -12,7 +12,7 @@
     --Thistle: rgb(226, 207, 234);
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Shadows Into Light Two';
     font-style: normal;
     font-weight: 400;
@@ -22,13 +22,13 @@
 }
 
 @font-face {
-    font-family: 'Shadows Into Light Two';
+    font-family: 'Caveat';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400 700;
     font-display: swap;
-    src: url(https://fonts.gstatic.com/s/shadowsintolighttwo/v17/4iC86LVlZsRSjQhpWGedwyOoW-0A6_kpsyNmpAzHGQ.woff2) format('woff2');
+    src: url(https://fonts.gstatic.com/s/caveat/v18/Wnz6HAc5bAfYB2Q7ZjYY.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
+} */
 
 header {
     background-color: var(--Russian-Violet);
@@ -36,7 +36,7 @@ header {
 
 h1 {
     color: #fff;
-    font-family: Caveat, 'Arial Narrow', Arial, sans-serif;
+    font-family: Permanent Marker, Arial, sans-serif;
     font-size: 2.87rem;
 	padding: 15px;
 }
@@ -66,7 +66,7 @@ h1 {
 
 nav {
 	background-color: var(--Russian-Violet);
-    font-family: Shadows Into Light Two, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Poiret One, Calibri, sans-serif;
 }
 .navigation {
 	list-style: none;
@@ -96,10 +96,14 @@ nav {
 }
 
 h2 {
-	font-family: Caveat, 'Arial Narrow', Arial, sans-serif;
+	font-family: Permanent Marker, Arial, sans-serif;
 	font-size: 36px;
 	text-align: center;
 }
+
+/* h3 {
+    font-weight: 900;
+} */
 
 img {
     border-radius: 10px;
@@ -119,12 +123,12 @@ section {
 }
 
 .temple-cards {
-    font-family: Shadows Into Light Two, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Poiret One, Calibri, sans-serif;
+    /* font-weight: 500; */
 }
 
 footer {
-	font-family: Shadows Into Light Two, Helvetica, sans-serif;
-    /* font-display: swap; */
+	font-family: Poiret One, sans-serif;
     background: var(--Russian-Violet);
     padding: 2rem;
     text-align: center;
