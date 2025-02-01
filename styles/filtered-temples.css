@@ -32,13 +32,14 @@
 
 header {
     background-color: var(--Russian-Violet);
+    height: 127px;
 }
 
 h1 {
     color: #fff;
     font-family: Permanent Marker, Arial, sans-serif;
-    font-size: 2.87rem;
 	padding: 15px;
+    
 }
 
 /* Mobile View ***************/
@@ -101,10 +102,6 @@ h2 {
 	text-align: center;
 }
 
-/* h3 {
-    font-weight: 900;
-} */
-
 img {
     border-radius: 10px;
 	height: auto;
@@ -124,7 +121,6 @@ section {
 
 .temple-cards {
     font-family: Poiret One, Calibri, sans-serif;
-    /* font-weight: 500; */
 }
 
 footer {
@@ -134,4 +130,5 @@ footer {
     text-align: center;
     color: #fff;
     text-decoration: none;
+    height: 100px;
 }
