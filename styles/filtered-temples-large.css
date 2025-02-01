@@ -14,6 +14,7 @@ In most WDD courses there is a requirement to use a separate file. This part wou
         align-items: center; /* Vertically center items */
         padding: 15px 20px;
         background-color: var(--Russian-Violet);
+        height: 127px;
     }
     
     #menu {
@@ -51,7 +52,7 @@ In most WDD courses there is a requirement to use a separate file. This part wou
         display: grid;
         gap: 1rem;
         place-items: center;
-        font-family: Poiret One, Calibri, sans-serif;
+        font-family: Shadows Into Light Two, Calibri, sans-serif;
         font-weight: 600;
     }
 
