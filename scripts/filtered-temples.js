@@ -102,8 +102,8 @@ const temples = [
         "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rexburg-idaho/400x250/rexburg-temple-lds-759405-wallpaper.jpg"
     },
     {
-        templeName: "Fort Lauderdale FLorida",
-        location: "Fort Lauderdale, FLorida, United States",
+        templeName: "Fort Lauderdale",
+        location: "Fort Lauderdale, Florida",
         dedicated: "2014, May, 4",
         area: 30500,
         imageUrl:
@@ -152,24 +152,29 @@ const smallLink = document.querySelector("#small");
 oldLink.addEventListener("click", () => {
     document.querySelector(".temple-cards").innerHTML = "";
     createTempleCard(temples.filter(temple => temple.dedicated < ("1900")));
+    document.querySelector("h2").innerHTML = "Old";
 });
 
 homeLink.addEventListener("click", () => {
     document.querySelector(".temple-cards").innerHTML = "";
     createTempleCard(temples);
+    document.querySelector("h2").innerHTML = "Home";
 });
 
 newLink.addEventListener("click", () => {
     document.querySelector(".temple-cards").innerHTML = "";
     createTempleCard(temples.filter(temple => temple.dedicated > ("2000")));
+    document.querySelector("h2").innerHTML = "New";
 });
 
 largeLink.addEventListener("click", () => {
     document.querySelector(".temple-cards").innerHTML = "";
     createTempleCard(temples.filter(temple => temple.area > 90000));
+    document.querySelector("h2").innerHTML = "Large";
 });
 
 smallLink.addEventListener("click", () => {
     document.querySelector(".temple-cards").innerHTML = "";
     createTempleCard(temples.filter(temple => temple.area < 10000));
+    document.querySelector("h2").innerHTML = "Small";
 });

@@ -52,7 +52,7 @@ In most WDD courses there is a requirement to use a separate file. This part wou
         display: grid;
         gap: 1rem;
         place-items: center;
-        font-family: Shadows Into Light Two, Calibri, sans-serif;
+        font-family: Cinzel, Calibri, sans-serif;
         font-weight: 600;
     }
 
