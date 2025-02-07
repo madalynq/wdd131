@@ -13,13 +13,90 @@
 header {
     background-color: var(--Moonstone);
     font-family: Metal Mania, 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
 }
 
 h2 {
     font-family: Lacquer, Times, serif;
+    padding: 5px;
 }
 
 p {
-    font-family: Comic Neue, Geneva, Tahoma, sans-serif
+    font-family: Comic Neue, Geneva, Tahoma, sans-serif;
 
+}
+
+main {
+    padding: 20px;
+}
+
+.header {
+    background-color: var(--Russian-Violet);
+    color: var(--Honeydew);
+    border: solid 1px;
+    border-radius: 6px;
+    width: 40%;
+    padding: .5rem;
+    margin-bottom: 10px;
+}
+
+.background {
+    background-color: var(--Night);
+    color: var(--Honeydew);
+    border: solid 1px;
+    border-radius: 6px;
+    width: 40%;
+    padding: .5rem;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: var(--Moonstone);
+    border: solid 1px;
+    border-radius: 6px;
+    width: 40%;
+    padding: .5rem;
+    margin-bottom: 10px;
+}
+
+.content {
+    background-color: var(--Honeydew);
+    border: solid 1px;
+    border-radius: 6px;
+    width: 40%;
+    padding: .5rem;
+    margin-bottom: 10px;
+}
+.headText {
+    font-family: Metal Mania;
+    font-size: large;
+    background-color: var(--Moonstone);
+    border: solid 1px;
+    border-radius: 6px;
+    width: 40%;
+    padding: .5rem;
+    margin-bottom: 10px;
+}
+
+.nameText {
+    font-family: Lacquer;
+    font-size: large;
+    background-color: var(--Night);
+    color: var(--Honeydew);
+    border: solid 1px;
+    border-radius: 6px;
+    width: 40%;
+    padding: .5rem;
+    margin-bottom: 10px;
+}
+
+.allText {
+    font-family: Comic Neue;
+    font-size: large;
+    background-color: var(--Honeydew);
+    border: solid 1px;
+    border-radius: 6px;
+    width: 40%;
+    padding: .5rem;
+    margin-bottom: 10px;
 }
