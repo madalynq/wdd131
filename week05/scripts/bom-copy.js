@@ -20,7 +20,7 @@ function displayList(item) {
 
 let chaptersArray = getChapterList () || [];
 
-chaptersArray.forEach(chapter=> {
+chaptersArray.forEach(chapter => {
     displayList(chapter);
 });
 
