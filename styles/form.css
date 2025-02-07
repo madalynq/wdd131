@@ -1,0 +1,11 @@
+* {
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+:root {
+    --Gunmetal: #153131;
+    --Emerald: #45CB85;
+    --Honeydew: #EDFDED;
+}
+
