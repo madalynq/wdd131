@@ -19,7 +19,7 @@
     <main>
         <form method="get" action="review.html" class="idk">
             <fieldset>
-                <label>Product Name*
+                <label>Product Name
                     <select id="productName" name="productName" required>
                         <option value="">Select a Product ...</option>
 
@@ -27,23 +27,22 @@
                 </label>
             </fieldset>
             <fieldset>
-                <label>Overall Rating</label>
-                <div class="rating"></div>
+                <label>Date of Installation <input type="date" id="doi" name="doi" required></label>
+            </fieldset>
+            <fieldset>
+                <div class="rating">Overall Rating</div>
                 <label><input type="radio" id="oneStar" name="rating" value="1" required>⭐</label>
                 <label><input type="radio" id="twoStar" name="rating" value="2" required>⭐⭐</label>
                 <label><input type="radio" id="threeStar" name="rating" value="3" required>⭐⭐⭐</label>
                 <label><input type="radio" id="fourStar" name="rating" value="4" required>⭐⭐⭐⭐</label>
                 <label><input type="radio" id="fiveStar" name="rating" value="5" required>⭐⭐⭐⭐⭐</label>
-            </fieldset>
-            <fieldset>
-                <label>Date of Installation <input type="date" id="doi" name="doi" required></label>
-            </fieldset>
-            <fieldset>
-                <div>Useful Features</div>
+
+                <div class="uf">Useful Features</div>
+                <label><input type="checkbox" id="uf" name="design" value="yes">Design</label>
                 <label><input type="checkbox" id="uf" name="durability" value="yes">Durability</label>
                 <label><input type="checkbox" id="uf" name="ease-of-use" value="yes">Ease of Use</label>
                 <label><input type="checkbox" id="uf" name="performance" value="yes">Performance</label>
-                <label><input type="checkbox" id="uf" name="design" value="yes">Design</label>
+                
             </fieldset>
             <fieldset>
                 <div>Username</div>
@@ -51,7 +50,7 @@
                 <label><input type="text" id="username" name="username"></label>
                 <div>Written Review</div>
                 <p>Optional</p>
-                <textarea id="reviewtext" name="reviewtext"></textarea>
+                <textarea id="reviewtext" name="reviewtext" rows="6"></textarea>
             </fieldset>
             <input type="submit" value="Post Review">
         </form>
