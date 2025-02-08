@@ -107,11 +107,14 @@ footer {
     margin-left: .5rem;
 }
 
-.idk input:required {
+.idk input:required,
+.idk select:required {
     border-left: solid 8px red;
 }
 
-.idk input:required:valid {
+
+.idk input:required:valid,
+.idk select:required:valid {
     border-left: solid 8px green;
 }
 
@@ -119,7 +122,7 @@ footer {
 
 
 @media only screen and (min-width: 64rem) {
-    header, main, footer {
+    main {
         max-width: 64rem;
         margin:auto;
     }
