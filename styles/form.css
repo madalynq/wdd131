@@ -114,3 +114,13 @@ footer {
 .idk input:required:valid {
     border-left: solid 8px green;
 }
+
+
+
+
+@media only screen and (min-width: 64rem) {
+    header, main, footer {
+        max-width: 64rem;
+        margin:auto;
+    }
+}
