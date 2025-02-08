@@ -19,7 +19,7 @@
     <main>
         <form method="get" action="review.html" class="idk">
             <fieldset>
-                <label>Product Name *
+                <label for="productName">Product Name *
                     <select id="productName" name="productName" required>
                         <option value="">Select a Product ...</option>
 
@@ -27,28 +27,28 @@
                 </label>
             </fieldset>
             <fieldset>
-                <label>Date of Installation * <input type="date" id="doi" name="doi" required></label>
+                <label for="doi">Date of Installation * <input type="date" id="doi" name="doi" required></label>
             </fieldset>
             <fieldset>
                 <div class="rating">Overall Rating * </div>
-                <label><input type="radio" id="oneStar" name="rating" value="1" required>⭐</label>
-                <label><input type="radio" id="twoStar" name="rating" value="2" required>⭐⭐</label>
-                <label><input type="radio" id="threeStar" name="rating" value="3" required>⭐⭐⭐</label>
-                <label><input type="radio" id="fourStar" name="rating" value="4" required>⭐⭐⭐⭐</label>
-                <label><input type="radio" id="fiveStar" name="rating" value="5" required>⭐⭐⭐⭐⭐</label>
+                <label for="oneStar"><input type="radio" id="oneStar" name="rating" value="1" required>⭐</label>
+                <label for="twoStar"><input type="radio" id="twoStar" name="rating" value="2" required>⭐⭐</label>
+                <label for="threeStar"><input type="radio" id="threeStar" name="rating" value="3" required>⭐⭐⭐</label>
+                <label for="fourStar"><input type="radio" id="fourStar" name="rating" value="4" required>⭐⭐⭐⭐</label>
+                <label for="fiveStar"><input type="radio" id="fiveStar" name="rating" value="5" required>⭐⭐⭐⭐⭐</label>
 
                 <div class="uf">Useful Features</div>
-                <label><input type="checkbox" id="design" name="design" value="yes">Design</label>
-                <label><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
-                <label><input type="checkbox" id="ease-of-use" name="ease-of-use" value="yes">Ease of Use</label>
-                <label><input type="checkbox" id="performance" name="performance" value="yes">Performance</label>
+                <label for="design"><input type="checkbox" style="font-size: 24px" id="design" name="design" value="yes">Design</label>
+                <label for="durability"><input type="checkbox" style="font-size: 24px" id="durability" name="durability" value="yes">Durability</label>
+                <label for="ease-of-use"><input type="checkbox" style="font-size: 24px" id="ease-of-use" name="ease-of-use" value="yes">Ease of Use</label>
+                <label for="performance"><input type="checkbox" style="font-size: 24px" id="performance" name="performance" value="yes">Performance</label>
                 
             </fieldset>
             <fieldset>
-                <div>Username</div>
+                <label for="username">Username</label>
                 <p>Optional</p>
-                <label><input type="text" id="username" name="username"></label>
-                <div>Written Review</div>
+                <input type="text" id="username" name="username">
+                <label for="reviewtext">Written Review</label>
                 <p>Optional</p>
                 <textarea id="reviewtext" name="reviewtext" rows="6"></textarea>
             </fieldset>

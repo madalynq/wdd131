@@ -72,17 +72,20 @@ footer {
 .idk input[type="radio"],
 .idk input[type="checkbox"]{
     margin-right: .5rem;
-    margin-bottom: .5rem;  
+    margin-bottom: 1rem;
+    width: 25px;
+    height: 25px; 
 }
 
 .idk input[type="submit"] {
     background-color: var(--Emerald);
     border-radius: 6px;
-    box-shadow: 1px 1px 2px #b6b5b5;
-    padding: .8rem;
+    box-shadow: 1px 1px 1px #b6b5b5;
+    padding: 1rem 0;
     width: 96%;
-    max-width: 400px;
-    margin: 2rem;
+    max-width: 300px;
+    margin: .3rem;
+    
 }
 
 .idk input[type="text"],
@@ -93,7 +96,7 @@ footer {
     border-radius: 6px;
     padding: .75rem;
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     appearance: none;
 }
 
