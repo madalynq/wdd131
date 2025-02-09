@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@media only screen and (min-width: 40em) {    
+    header {
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; /* Vertically center items */
+        padding: 15px 20px;
+        background-color: var(--Russian-Violet);
+        height: 127px;
+    }
+    
+    #menu {
+        display: none;
+    }
+
+	.navigation {
+		display: flex;
+        align-items: center;
+        justify-content: flex-end;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		/* flex: 1 1 100%; */
+	}
+
+	.navigation a {
+		text-align: center;
+        color: #fff;
+        font-size: 26px;
+	}
+
+    h1 {
+        font-size: 46px;
+    }
+
+    nav {
+        justify-content: flex-end;
+    }
+}

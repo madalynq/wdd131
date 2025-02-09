@@ -22,6 +22,60 @@ h1 {
     font-size: 46px;
 }
 
+/* Mobile View ***************/
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight: 700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: var(--Russian-Violet);
+	color: #000;
+    position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "≡";
+    color: #fff;
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+nav {
+	background-color: var(--Russian-Violet);
+    font-family: Lacquer, 'Arial Narrow', sans-serif;
+}
+.navigation {
+	list-style: none;
+}
+
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1.5rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover, .navigation a:active {
+	color: var(--Moonstone);
+	background-color: black;
+}
+
+.show li {
+	display: block;
+}
+
 .hero img {
     width: 100%;
     height: auto;
