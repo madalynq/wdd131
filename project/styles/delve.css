@@ -22,6 +22,12 @@ h1 {
     font-size: 46px;
 }
 
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+
 footer {
     background-color: var(--Moonstone);
     text-align: center;
