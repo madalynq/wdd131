@@ -112,6 +112,9 @@ fieldset {
 	padding: 10px;
 }
 
+a {
+	font-weight: bold;
+}
 
 footer {
     background-color: var(--Moonstone);
