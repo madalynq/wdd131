@@ -40,4 +40,42 @@
     nav {
         justify-content: flex-end;
     }
+
+    .hero img {
+        display: block;
+        width: 100%;
+        height: auto;
+        position:relative;
+    }
+
+    .welcome {
+        position: absolute;
+        top: 200px;
+        left: 25px;
+        max-width: 350px;
+        /* padding: 10px; */
+        padding: 1rem;
+        margin: 1rem;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .monthly-update {
+        position: absolute;
+        top: 200px;
+        right: 25px;
+        max-width: 375px;
+        padding: 1rem;
+        margin: 1rem;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    }
+
+    fieldset img {
+        max-width: 250px;
+        height: auto;
+        padding: 10px;
+        
+    }
+
+    
+    
 }

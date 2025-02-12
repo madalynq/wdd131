@@ -79,6 +79,37 @@ nav {
 .hero img {
     width: 100%;
     height: auto;
+	position: relative;
+}
+
+h2, 
+legend {
+	font-family: Lacquer, 'Franklin Gothic Medium', sans-serif;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.upper,
+legend {
+	font-size: larger;
+	font-weight: bolder;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+section {
+	background-color: var(--Honeydew);
+	font-family: Comic Neue, Helvetica, sans-serif;
+	text-align: center;
+	border: 8px solid var(--Moonstone);
+	border-radius: 8px;
+}
+
+fieldset {
+	margin: 10px;
+	display: block;
+	justify-items: center;
+	padding: 10px;
 }
 
 
