@@ -87,6 +87,7 @@ legend {
 	font-family: Lacquer, 'Franklin Gothic Medium', sans-serif;
 	text-align: center;
 	padding-bottom: 10px;
+	font-size: 36px;
 }
 
 .upper,
@@ -116,9 +117,31 @@ a {
 	font-weight: bold;
 }
 
+figcaption {
+	font-family: Lacquer, 'Franklin Gothic Medium', sans-serif;
+	font-weight: bold;
+	font-size: 26px;
+	color: var(--Honeydew);
+}
+
+
+figure img {
+    border-radius: 10px;
+	height: 100%;
+	width: auto;
+}
+
 footer {
     background-color: var(--Moonstone);
     text-align: center;
     font-family: Lacquer, Arial, Helvetica, sans-serif;
     padding: 1rem 0;
+}
+
+body {
+	background-color: var(--Night);
+}
+
+.archives h2 {
+	color: var(--Honeydew);
 }

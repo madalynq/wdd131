@@ -10,3 +10,8 @@ hambutton.addEventListener('click', () => {
 	mainnav.classList.toggle('show');
 	hambutton.classList.toggle('show');
 });
+
+
+function toggleCard(card) {
+	card.classList.toggle('expanded');
+}
