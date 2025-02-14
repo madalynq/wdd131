@@ -102,8 +102,7 @@ body {
 	color: var(--Honeydew);
 }
 
-
-/* .card {
+.card {
 	border-radius: 10px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 	margin: 10px;
@@ -114,21 +113,26 @@ body {
 
 .card-content {
 	display: none;
+    background-color: var(--Honeydew);
+    padding: 15px;
 }
 
 .card.expanded .card-content {
 	display: block;
-} */
+    background-color: var(--Honeydew);
+    padding: 15px;
+}
 
-figcaption {
+.card h3 {
 	font-family: Lacquer, 'Franklin Gothic Medium', sans-serif;
 	font-weight: bold;
 	font-size: 26px;
 	color: var(--Honeydew);
+    text-align: center;
 }
 
 
-figure img {
+img {
     border-radius: 10px;
 	height: 100%;
 	width: auto;

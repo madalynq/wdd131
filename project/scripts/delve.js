@@ -123,14 +123,13 @@ function createCard(filteredGhosties) {
         let name = document.createElement("h3");
         let classification = document.createElement("p");
         let description = document.createElement("p");
-		let tiktok = document.createElement("a")
+		let tiktok = document.createElement("a");
         let img = document.createElement("img");
+		let cardContent = document.createElement("div");
 
 		name.textContent = ghostie.ghostName;
         classification.innerHTML = `<span class="label">Classification:</span> ${ghostie.classification}`;
         description.innerHTML = `<span class="label">Description:</span> ${ghostie.description}`;
-		description.setAttribute("class", "card-content");
-		tiktok.setAttribute("class", "card-content");
 		tiktok.href = ghostie.videoUrl;
 		tiktok.textContent = `...More Info`;
 		tiktok.target = "_blank";
@@ -141,12 +140,19 @@ function createCard(filteredGhosties) {
         img.setAttribute("height", "250");
 
 		card.setAttribute("onclick", "toggleCard(this)");
+		card.classList.add("card");
+
+		cardContent.classList.add("card-content");
+
+		cardContent.appendChild(classification);
+		cardContent.appendChild(description);
+		cardContent.appendChild(tiktok);
         
-        card.appendChild(name);
-        card.appendChild(classification);
-        card.appendChild(description);
-		card.appendChild(tiktok);
         card.appendChild(img);
+		card.appendChild(name);
+        card.appendChild(cardContent);
+      
+        
 
         document.querySelector(".card").appendChild(card);
     });
