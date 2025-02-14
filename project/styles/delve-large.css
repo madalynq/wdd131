@@ -50,7 +50,7 @@
 
     .welcome {
         position: absolute;
-        top: 200px;
+        top: 175px;
         left: 25px;
         max-width: 350px;
         /* padding: 10px; */
@@ -61,7 +61,7 @@
 
     .monthly-update {
         position: absolute;
-        top: 200px;
+        top: 175px;
         right: 25px;
         max-width: 375px;
         padding: 1rem;

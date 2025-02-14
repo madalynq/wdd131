@@ -76,12 +76,6 @@ nav {
 	display: block;
 }
 
-.hero img {
-    width: 100%;
-    height: auto;
-	position: relative;
-}
-
 h2 {
 	font-family: Lacquer, 'Franklin Gothic Medium', sans-serif;
 	text-align: center;
@@ -89,33 +83,9 @@ h2 {
 	font-size: 36px;
 }
 
-.upper,
-legend {
-	font-size: larger;
-	font-weight: bolder;
-	text-align: center;
-	padding-bottom: 10px;
-}
-
-section {
-	background-color: var(--Honeydew);
-	font-family: Comic Neue, Helvetica, sans-serif;
-	text-align: center;
-	border: 8px solid var(--Moonstone);
-	border-radius: 8px;
-}
-
-fieldset {
-	margin: 10px;
-	display: block;
-	justify-items: center;
-	padding: 10px;
-}
-
 a {
 	font-weight: bold;
 }
-
 
 footer {
     background-color: var(--Moonstone);
@@ -126,4 +96,40 @@ footer {
 
 body {
 	background-color: var(--Night);
+}
+
+.archives h2 {
+	color: var(--Honeydew);
+}
+
+
+/* .card {
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	margin: 10px;
+	overflow: hidden;
+	transition: max-height 0.3s ease;
+	cursor: pointer;
+}
+
+.card-content {
+	display: none;
+}
+
+.card.expanded .card-content {
+	display: block;
+} */
+
+figcaption {
+	font-family: Lacquer, 'Franklin Gothic Medium', sans-serif;
+	font-weight: bold;
+	font-size: 26px;
+	color: var(--Honeydew);
+}
+
+
+figure img {
+    border-radius: 10px;
+	height: 100%;
+	width: auto;
 }
