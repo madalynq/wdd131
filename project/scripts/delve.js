@@ -5,10 +5,18 @@ document.getElementById("lastModified").textContent = `Last Modified: ${document
 const mainnav = document.querySelector('.navigation')
 const hambutton = document.querySelector('#menu');
 
+const filterNav = document.querySelector('.filter-nav');
+const filterButton = document.querySelector('#filter');
+
 // Add a click event listender to the hamburger button and use a callback function that toggles the list element's list of classes.
 hambutton.addEventListener('click', () => {
 	mainnav.classList.toggle('show');
 	hambutton.classList.toggle('show');
+});
+
+filterButton.addEventListener('click', () => {
+	filterNav.classList.toggle('show');
+	filterButton.classList.toggle('show');
 });
 
 
@@ -159,23 +167,23 @@ function createCard(filteredGhosties) {
 };
 
 const allLink = document.querySelector("#all")
-const ghostLink = document.querySelector("#ghost");
-const creatureLink = document.querySelector("#creature");
+const ghostLink = document.querySelector("#ghosts");
+const creatureLink = document.querySelector("#creatures");
 
 ghostLink.addEventListener("click", () => {
-    document.querySelector(".card").innerHTML = "";
+    document.querySelector(".ghost-card").innerHTML = "";
     createCard(ghosties.filter(ghostie => ghostie.classification == ("Ghost")));
     document.querySelector("h2").innerHTML = "Ghosts";
 });
 
 allLink.addEventListener("click", () => {
-    document.querySelector(".cards").innerHTML = "";
+    document.querySelector(".ghost-card").innerHTML = "";
     createCard(ghosties);
-    document.querySelector("h2").innerHTML = "All";
+    document.querySelector("h2").innerHTML = "The Archives";
 });
 
 creatureLink.addEventListener("click", () => {
-    document.querySelector(".cards").innerHTML = "";
+    document.querySelector(".ghost-card").innerHTML = "";
     createCard(ghosties.filter(ghostie => ghostie.classification == ("Creature")));
-    document.querySelector("h2").innerHTML = "Creature";
+    document.querySelector("h2").innerHTML = "Creatures";
 });

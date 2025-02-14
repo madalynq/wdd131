@@ -19,7 +19,7 @@ header {
 }
 
 h1 {
-    font-size: 46px;
+    font-size: 46px;  
 }
 
 /* Mobile View ***************/
@@ -41,22 +41,28 @@ h1 {
     color: #fff;
 }
 
-#menu.show::before {
+#menu.show::before,
+#filter.show::before {
 	content: "X";
 }
 
-nav {
+header nav {
 	background-color: var(--Russian-Violet);
     font-family: Lacquer, 'Arial Narrow', sans-serif;
 }
-.navigation {
+
+.navigation,
+.filter-nav {
 	list-style: none;
 }
 
-.navigation li {
+.navigation li,
+.filter-nav li {
 	display: none;
 }
-.navigation a {
+
+.navigation a,
+.filter-nav a {
 	display: block;
 	padding: 0.75rem 1rem;
 	text-align: center;
@@ -67,7 +73,10 @@ nav {
 	font-size: clamp(1.5rem, 2vmin, 1.5rem);
 }
 
-.navigation a:hover, .navigation a:active {
+.navigation a:hover, 
+.filter-nav a:hover,
+.navigation a:active,
+.filter-nav a:active {
 	color: var(--Moonstone);
 	background-color: black;
 }
@@ -83,6 +92,27 @@ h2 {
 	font-size: 36px;
 }
 
+
+#filter {
+	display: block;
+	font-size: 1.6rem;
+	font-weight: 700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	color: #000;
+    position: absolute;
+	right: 1rem;
+}
+
+#filter::before {
+	content: "Filter";
+    font-family: Lacquer, Arial, Helvetica, sans-serif;
+    color: var(--Honeydew);
+}
+
+.filter-nav {
+    font-family: Comic Neue, Helvetica, sans-serif;
+}
 a {
 	font-weight: bold;
 }
@@ -100,6 +130,7 @@ body {
 
 .archives h2 {
 	color: var(--Honeydew);
+    padding: 2rem;
 }
 
 .card {
