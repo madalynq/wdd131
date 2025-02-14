@@ -104,11 +104,12 @@ body {
 
 .card {
 	border-radius: 10px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	/* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
 	margin: 10px;
 	overflow: hidden;
 	transition: max-height 0.3s ease;
 	cursor: pointer;
+    /* align-items: center; */
 }
 
 .card-content {
@@ -120,9 +121,22 @@ body {
 .card.expanded .card-content {
 	display: block;
     background-color: var(--Honeydew);
-    padding: 15px;
+    font-family: Comic Neue, Helvetica, sans-serif;
+    font-size: 24px;
+	text-align: center;
+	border-radius: 8px;
 }
 
+.card.expanded {
+    background-color: var(--Honeydew);
+    border: 8px solid var(--Moonstone);
+    justify-content: center;
+    max-width: 400px;
+}
+
+.card.expanded span {
+    font-weight: bolder;
+}
 .card h3 {
 	font-family: Lacquer, 'Franklin Gothic Medium', sans-serif;
 	font-weight: bold;
@@ -130,7 +144,6 @@ body {
 	color: var(--Honeydew);
     text-align: center;
 }
-
 
 img {
     border-radius: 10px;

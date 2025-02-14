@@ -76,29 +76,26 @@
         
     }
 
-    .archives {
+    .ghost-card {
         grid-template-columns: repeat(3, 1fr); 
-        max-width: 1400px;
-        margin: 0 auto;
+        /* max-width: 1400px; */
+        /* margin: 0 auto; */
         display: grid;
         gap: 1rem;
         place-items: center;
     }
 
-    h2 {        
+    h3 {        
         grid-column: span 3;
     }
-
-    
-    
 }
 
 @media only screen and (max-width: 75em) {
-    .archives {
+    .ghost-card {
         grid-template-columns: repeat(2, 1fr); 
     }
 
-    h2 {
+    h3 {
         grid-column: span 2;
     }
  }

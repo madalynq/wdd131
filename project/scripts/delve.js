@@ -154,7 +154,7 @@ function createCard(filteredGhosties) {
       
         
 
-        document.querySelector(".card").appendChild(card);
+        document.querySelector(".ghost-card").appendChild(card);
     });
 };
 
