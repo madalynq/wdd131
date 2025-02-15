@@ -26,7 +26,43 @@
         </nav>
     </header>
     <main>
-        
+        <form method="get" action="review.html" class="idk">
+            <fieldset>
+                <label for="entity">Entity *
+                    <select id="entity" name="entity" required>
+                        <option value="">Select an Entity ...</option>
+
+                    </select>
+                </label>
+                <div class="rating">Overall Rating * </div>
+                <label for="oneStar"><input type="radio" id="oneStar" name="rating" value="1" required>⭐</label>
+                <label for="twoStar"><input type="radio" id="twoStar" name="rating" value="2" required>⭐⭐</label>
+                <label for="threeStar"><input type="radio" id="threeStar" name="rating" value="3" required>⭐⭐⭐</label>
+                <label for="fourStar"><input type="radio" id="fourStar" name="rating" value="4" required>⭐⭐⭐⭐</label>
+                <label for="fiveStar"><input type="radio" id="fiveStar" name="rating" value="5" required>⭐⭐⭐⭐⭐</label>
+                <label for="reviewtext">Written Review</label>
+                <p>Optional</p>
+                <textarea id="reviewtext" name="reviewtext" rows="6"></textarea>
+            </fieldset>
+            <input type="submit" value="Post Review">
+        </form>
+        <form method="get" action="message.html" class="idk">
+            <fieldset>
+                <label for="reason">Reason *
+                    <select id="reason" name="reason" required>
+                        <option value="">Select an Option ...</option>
+                    </select> 
+                </label>    
+                <label for="username">Username</label>
+                <p>Optional</p>
+                <input type="text" id="username" name="username">
+                <label for="reviewtext">Written Review</label>
+                <p>Optional</p>
+                <textarea id="reviewtext" name="reviewtext" rows="6"></textarea>
+            </fieldset>
+            <input type="submit" value="Send Message">
+        </form>
+        <img src="images/delve-banner.webp" alt="delve-banner" loading="lazy">     
     </main>
     <footer><p>| &copy; <span id="currentyear"></span> | Madalyn Querubin | Idaho, USA</p>
         <p><span id="lastModified"></span></p>
