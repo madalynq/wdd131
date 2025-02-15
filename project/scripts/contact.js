@@ -16,16 +16,40 @@ if (mainnav && hambutton) {
 
 const ghosties = [
     {
-      ghostName: "Leshy",
+      ghostName: "Banshee",
       classification: "Ghost",
     },
     {
-	  ghostName: "Banshee",
-      classification: "Ghost",
+	  ghostName: "Black Shuck",
+	  classification: "Creature",
+    }, 
+    {
+	  ghostName: "Drekavac",
+	  classification: "Ghost",
+    },
+    {
+	  ghostName: "Jorogumo",
+	  classification: "Creature",
     },
     {
 	  ghostName: "Karakoncolos",
       classification: "Creature",
+    },
+    {
+      ghostName: "Leshy",
+      classification: "Ghost",
+    },
+    {
+	  ghostName: "Onryō",
+	  classification: "Ghost",
+    }, 
+    {
+	  ghostName: "Painted Skin",
+	  classification: "Creature",
+    },
+    {
+	  ghostName: "Skinwalker",
+	  classification: "Creature",
     },
     {
 	  ghostName: "Tikbalang",
@@ -37,30 +61,6 @@ const ghosties = [
     },
     {
 	  ghostName: "Wendigo",
-	  classification: "Creature",
-    },
-    {
-	  ghostName: "Onryō",
-	  classification: "Ghost",
-    },
-    {
-	  ghostName: "Black Shuck",
-	  classification: "Creature",
-    },
-    {
-	  ghostName: "Drekavac",
-	  classification: "Ghost",
-    },
-    {
-	  ghostName: "Jorogumo",
-	  classification: "Creature",
-    },
-    {
-	  ghostName: "Skinwalker",
-	  classification: "Creature",
-    },
-    {
-	  ghostName: "Painted Skin",
 	  classification: "Creature",
     },
 ];
@@ -90,14 +90,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const reasons = [
     {
+        reason: "Feedback",
+    },
+    {
         reason: "Questions",
     },
     {
         reason: "Experience",
     },
-    {
-        reason: "Feedback",
-    },
+    
 ];
 
 document.addEventListener("DOMContentLoaded", function () {
