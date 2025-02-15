@@ -1,6 +1,9 @@
 * {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 :root {
@@ -8,6 +11,11 @@
     --Russian-Violet: rgb(65, 31, 96);
     --Moonstone: rgb(68, 172, 186);
     --Honeydew: rgb(239, 254, 238);
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
 
 header {
@@ -22,6 +30,9 @@ h1 {
     font-size: 46px;
 }
 
+/* main {
+    padding: 1rem;
+} */
 /* Mobile View ***************/
 #menu {
 	display: block;
@@ -76,46 +87,68 @@ nav {
 	display: block;
 }
 
-.hero img {
+.banner-hero img {
     width: 100%;
     height: auto;
 	position: relative;
 }
 
-h2 {
-	font-family: Lacquer, 'Franklin Gothic Medium', sans-serif;
-	text-align: center;
-	padding-bottom: 10px;
-	font-size: 36px;
+
+body {
+	background-color: var(--Night);
 }
 
-.upper,
-legend {
-	font-size: larger;
-	font-weight: bolder;
-	text-align: center;
-	padding-bottom: 10px;
+.formBox fieldset {
+    background-color: var(--Honeydew);
+    font-family: Comic Neue, Helvetica, sans-serif;
+    margin: .5rem 0;
+    border: 8px solid var(--Moonstone);
+    border-radius: 10px;
+    padding:.5rem 2%;
+    width: 450px;
 }
 
-section {
-	background-color: var(--Honeydew);
-	font-family: Comic Neue, Helvetica, sans-serif;
-	text-align: center;
-	border: 8px solid var(--Moonstone);
-	border-radius: 8px;
+.formBox label {
+    display: block;
+    font-weight: bold;
 }
 
-fieldset {
-	margin: 10px;
-	display: block;
-	justify-items: center;
-	padding: 10px;
+.rating {
+    padding-bottom: .5rem;
+    padding-top: .75rem;
+    font-weight: bold;
 }
 
-a {
-	font-weight: bold;
+.formBox input[type="radio"] {
+    margin-right: .5rem;
+    margin-bottom: 1rem;
+    width: 25px;
+    height: 25px; 
 }
 
+.formBox input[type="submit"] {
+    background-color: var(--Moonstone);
+    font-family: Lacquer, 'Arial Narrow', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px #b6b5b5;
+    padding: 1rem 0;
+    width: 96%;
+    max-width: 300px;
+    margin: .3rem; 
+}
+
+.formBox input[type="email"],
+.formBox select,
+.formBox textarea {
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 500px;
+    appearance: none;
+}
 
 footer {
     background-color: var(--Moonstone);
@@ -134,6 +167,10 @@ footer {
     padding: 10px;
 }
 
-body {
-	background-color: var(--Night);
-}
+/* @media only screen and (min-width: 64rem) {
+    main {
+        max-width: 64rem;
+        margin:auto;
+    }
+} */
+

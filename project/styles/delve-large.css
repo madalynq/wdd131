@@ -41,7 +41,8 @@
         justify-content: flex-end;
     }
 
-    .hero img {
+    .hero img,
+    .banner-hero img {
         display: block;
         width: 100%;
         height: auto;
@@ -88,7 +89,22 @@
     h3 {        
         grid-column: span 3;
     }
+
+    #netherscale {
+        position: absolute;
+        left: 4rem;
+        top: 13rem;
+    }
+
+    #feedback {
+        position: absolute;
+        right: 4rem;
+        top: 13rem;
+    }
+
 }
+
+
 
 @media only screen and (max-width: 75em) {
     .ghost-card {

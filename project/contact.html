@@ -6,7 +6,7 @@
     <title>Contact</title>
     <meta name="author" content="Madalyn Querubin">
     <meta name="description" content="This is a contact page, with links to social accounts with more info, and a form to get in contact with me.">
-    <link href="styles/delve.css" rel="stylesheet">
+    <link href="styles/contact.css" rel="stylesheet">
     <link href="styles/delve-large.css" rel="stylesheet">
     <script src="scripts/delve.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,8 +26,17 @@
         </nav>
     </header>
     <main>
-        <form method="get" action="review.html" class="idk">
+        <div class="banner-hero">
+            <picture>
+              <source srcset="images/banner-hero-large.webp" media="(min-width: 1000px)">
+              <source srcset="images/banner-hero-medium.webp" media="(min-width: 500px)">
+              <img src="images/banner-hero-small.webp" alt="delve-hero-img" width="500" height="250">
+            </picture>
+        </div>
+        <form method="get" action="review.html" class="formBox" id="netherscale">
             <fieldset>
+                <h2>The Netherscale</h2>
+                <p>(1 star = Tolerable, 5 stars = Terrifying)</p>
                 <label for="entity">Entity *
                     <select id="entity" name="entity" required>
                         <option value="">Select an Entity ...</option>
@@ -40,32 +49,48 @@
                 <label for="threeStar"><input type="radio" id="threeStar" name="rating" value="3" required>⭐⭐⭐</label>
                 <label for="fourStar"><input type="radio" id="fourStar" name="rating" value="4" required>⭐⭐⭐⭐</label>
                 <label for="fiveStar"><input type="radio" id="fiveStar" name="rating" value="5" required>⭐⭐⭐⭐⭐</label>
-                <label for="reviewtext">Written Review</label>
-                <p>Optional</p>
+                <label for="reviewtext">Written Review (Optional)</label>
                 <textarea id="reviewtext" name="reviewtext" rows="6"></textarea>
             </fieldset>
             <input type="submit" value="Post Review">
         </form>
-        <form method="get" action="message.html" class="idk">
+        <form method="get" action="message.html" class="formBox" id="feedback">
             <fieldset>
+                <h2>Contact</h2>
+                <p>If you have any questions or feedback, submit them below and I'll get back to you ASAP. </p>
+                <p>You can also tell me about your experiences with the Netherworld - </p>
+                <p>with permission, your experiences could be featured in upcoming content</p>
                 <label for="reason">Reason *
                     <select id="reason" name="reason" required>
                         <option value="">Select an Option ...</option>
                     </select> 
                 </label>    
-                <label for="username">Username</label>
-                <p>Optional</p>
-                <input type="text" id="username" name="username">
-                <label for="reviewtext">Written Review</label>
-                <p>Optional</p>
-                <textarea id="reviewtext" name="reviewtext" rows="6"></textarea>
+                <label for="email">E-mail:  *</label>
+                <input type="email" id="email" name="email" placeholder="someone@gmail.com">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6"></textarea>
             </fieldset>
             <input type="submit" value="Send Message">
         </form>
-        <img src="images/delve-banner.webp" alt="delve-banner" loading="lazy">     
+     
     </main>
-    <footer><p>| &copy; <span id="currentyear"></span> | Madalyn Querubin | Idaho, USA</p>
+    <footer>
+        <p>| &copy; <span id="currentyear"></span> | Madalyn Querubin | Idaho, USA</p>
         <p><span id="lastModified"></span></p>
+        <div class="socials">
+            <a href="https://www.youtube.com/@DelveIntoTheNetherworld" target="_blank">
+            <img src="images/youtube.png" alt="YouTube">
+            </a>
+            <a href="ttps://www.instagram.com/delveintothenetherworld/" target="_blank">
+            <img src="images/insta.png" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com/@delveintothenetherworld" target="_blank">
+            <img src="images/tiktok.png" alt="TikTok">
+            </a>
+            <a href="https://www.facebook.com/people/Delve-Into-The-Netherworld/61556139920835/" target="_blank">
+                <img src="images/fb.png" alt="facebook">
+            </a>  
+        </div>
     </footer>
 </body>
 </html>
