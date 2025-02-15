@@ -148,8 +148,19 @@ body {
     width: 100%;
     max-width: 500px;
     appearance: none;
+    margin-bottom: 1rem;
 }
 
+fieldset h2 {
+    font-family: Lacquer, 'Arial Narrow', sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+fieldset p {
+    text-align: center;
+    padding: 5px;
+}
 footer {
     background-color: var(--Moonstone);
     text-align: center;
