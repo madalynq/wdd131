@@ -1,13 +1,17 @@
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
 
-const mainnav = document.querySelector('.navigation')
+const mainnav = document.querySelector('.navigation');
 const hambutton = document.querySelector('#menu');
 
-hambutton.addEventListener('click', () => {
-	mainnav.classList.toggle('show');
-	hambutton.classList.toggle('show');
-});
+if (mainnav && hambutton) {
+    hambutton.addEventListener('click', () => {
+        mainnav.classList.toggle('show');
+        hambutton.classList.toggle('show');
+    });
+} else {
+    console.warn('Navigation or menu button not found in the DOM.');
+}
 
 
 const ghosties = [
@@ -108,4 +112,3 @@ document.addEventListener("DOMContentLoaded", function () {
             })
         }
     });
-    
