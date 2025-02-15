@@ -139,6 +139,11 @@ body {
     margin: .3rem; 
 }
 
+.formBox input[type="submit"]:hover {
+    background-color: var(--Russian-Violet);
+    color: var(--Honeydew);
+}
+
 .formBox input[type="email"],
 .formBox select,
 .formBox textarea {
