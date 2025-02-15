@@ -1,0 +1,68 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+:root {
+    --Night: rgb(7, 11, 12);
+    --Russian-Violet: rgb(65, 31, 96);
+    --Moonstone: rgb(68, 172, 186);
+    --Honeydew: rgb(239, 254, 238);
+}
+
+header {
+    background-color: var(--Russian-Violet);
+    font-family: Metal Mania, 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: var(--Honeydew);
+    padding: 1.5rem 0;
+}
+
+h1 {
+    font-size: 46px;
+}
+
+h2 {
+	font-family: Lacquer, 'Franklin Gothic Medium', sans-serif;
+	text-align: center;
+	padding-bottom: 10px;
+	font-size: 36px;
+    color: var(--Honeydew);
+}
+
+fieldset {
+	margin: 10px;
+	display: block;
+	justify-items: center;
+	padding: 100px;
+    background-color: var(--Honeydew);
+	font-family: Comic Neue, Helvetica, sans-serif;
+	font-size: 26px;
+    text-align: center;
+    
+	border: 8px solid var(--Moonstone);
+	border-radius: 8px;
+    margin: 2rem;
+}
+
+
+footer {
+    background-color: var(--Moonstone);
+    text-align: center;
+    font-family: Lacquer, Arial, Helvetica, sans-serif;
+    padding: 1rem 0;
+}
+
+.socials a {
+    text-decoration: none;
+
+}
+
+.socials img {
+    max-width: 40px;
+    padding: 10px;
+}
+
+body {
+	background-color: var(--Night);
+}
