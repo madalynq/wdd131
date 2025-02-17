@@ -18,6 +18,10 @@ filterButton.addEventListener('click', () => {
 	filterButton.classList.toggle('show');
 });
 
+function toggleCard(card) {
+	card.classList.toggle('expanded');
+};
+
 const ghosties = [
     {
       ghostName: "Leshy",
